@@ -1,11 +1,3 @@
 language: go
-sudo: false
 go:
     - 1.8.x
-
-jobs:
-    include:
-        - stage: build
-          script: CGO_ENABLED=0 go build -ldflags="-s -w"
-        - stage: test
-          script: go test
