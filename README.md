@@ -1,5 +1,7 @@
 # Time-of-Day (TOD) RFC868 server
 
+[![Build Status](https://travis-ci.org/egorse/tod-server.svg?branch=master)](https://travis-ci.org/egorse/tod-server)
+
 Trivial UDP only Time-of-Day (TOD) RFC868 server.
 By default listen to 37/UDP.
 
