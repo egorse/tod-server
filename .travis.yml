@@ -4,4 +4,6 @@ go:
 
 script:
     - make
+    
+deploy:
     - make deploy
