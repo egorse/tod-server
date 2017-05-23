@@ -3,10 +3,10 @@ jobs:
         - stage: build
           language: go
           go:
-              - 1.8
+              - 1.x
           script: CGO_ENABLED=0 go build -ldflags="-s -w"
         - stage: test
           language: go
           go:
-              - 1.8
+              - 1.x
           script: go test
