@@ -6,6 +6,7 @@ tod-server: main.go Makefile
 
 TRAVIS_TAG?=latest
 image: tod-server Makefile Dockerfile
+	export
 	echo docker login -u $(DOCKER_USER) -p $(DOCKER_PASSWORD)
 	echo docker build -t tod-server .
 	echo docker tag tod-server $(DOCKER_USER)/tod-server:$(TRAVIS_TAG)
