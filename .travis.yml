@@ -1,0 +1,13 @@
+language: go
+
+go:
+    - 1.8.1
+
+jobs:
+    include:
+        - stage: build
+          script: CGO_ENABLED=0 go build -ldflags="-s -w"
+        - stage: test
+          script: go test
+        - #
+          script: go vet

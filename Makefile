@@ -7,6 +7,6 @@ tod-server: main.go Makefile
 container: tod-server Makefile Dockerfile
 	docker build -t tod-server:latest .
 	#docker login
-	docker tag tod-server egorse/tod-server:latest
-	docker push egorse/tod-server:latest
+	#docker tag tod-server egorse/tod-server:latest
+	#docker push egorse/tod-server:latest
 	#docker logout
