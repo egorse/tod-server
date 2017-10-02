@@ -39,6 +39,6 @@ func main() {
 		now := time.Now().Unix() + 2208988800
 		binary.BigEndian.PutUint32(b, uint32(now))
 		conn.WriteToUDP(b, client)
-		log.Printf("reply to %s", client)
+		go log.Printf("reply to %s", client)
 	}
 }
